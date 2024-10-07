@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2f3136;
+  color: #ffffff;
+  margin: 0;
+  font-size: 18px; /* Increase the base font size */
+}
+
+.chat-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px; /* Increased width for better legibility */
+  background-color: #202225;
+  padding: 20px; /* Increased padding */
+  font-size: 18px; /* Larger text size */
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px; /* Larger text for titles */
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.chat-window {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px; /* Larger text for chat messages */
+}
+
+#chat-messages {
+  flex-grow: 1;
+  padding: 20px; /* Increased padding */
+  overflow-y: auto;
+  background-color: #36393f;
+  font-size: 18px; /* Larger text for better readability */
+}
+
+.message {
+  margin-bottom: 15px; /* More space between messages */
+}
+
+#message-input {
+  width: calc(100% - 80px); /* Adjusted for bigger button */
+  padding: 15px; /* Increased padding */
+  border: none;
+  background-color: #40444b;
+  color: white;
+  font-size: 18px; /* Larger input text */
+}
+
+#send-button {
+  width: 70px; /* Increased button size */
+  background-color: #7289da;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px; /* Larger button text */
+}
+
+#send-button:hover {
+  background-color: #5b6eae; /* Slight hover effect */
+}
